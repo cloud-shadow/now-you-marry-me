@@ -42,6 +42,12 @@ function showRecentMessages() {
 		    }
 		    $('#currentPage').text(res.currentPage);
 		    $('#totalPage').text(res.totalPage);
+		    if (res.totalPage==1) {
+		    	$('#btn-more-box').remove()	;
+		    }
+		    
+		    
+		    
 		},
 		error: function(){},
 	})
